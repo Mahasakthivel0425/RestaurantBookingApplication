@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Payment and Booking History</title>
+    <link rel="icon" href="../Images/logo.jpg">
+    <link rel="stylesheet" href="/CSS/style_history.css">
+    <script src="/Javascript/history.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+    <nav class="mainNav">
+        <div class="mainNav__logo">
+            <img src="../Images/logo.jpg" alt="logo">
+            <h3 class="heading">HEAVEN TOUCH</h3>
+        </div>
+        <div class="mainNav__links">
+            <a href="../html/index.html" class="mainNav__link">Home</a>
+            <a href="../HTML/about.html" class="mainNav__link">About Us</a>
+            <a href="../HTML/contact.html" class="mainNav__link">Contacts Us</a>
+            <a id="paymentHistoryBtn" href="../HTML/history.html" class="mainNav__link">Payment and Booking History</a>
+        </div>
+        <div class="mainNav__profile">
+            <img id="profileImage" src="" alt="Profile Picture" />
+            <h3 id="username" class="profile-name"></h3>
+        </div>
+    </nav>
+
+    <div id="history">
+        <h1>Payment and Booking History</h1>
+        <table id="historyTable">
+            <thead>
+                <tr>
+                    <th>Concert Name</th>
+                    <th>Location</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Order ID</th>
+                    <th>Payment ID</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                    <th>Payment Date</th>
+                    <th>Payment Time</th>
+                    <th>Download</th> <!-- Added this column for the download button -->
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 HEAVEN TOUCH. All rights reserved.</p>
+    </footer>
+</body>
+</html>

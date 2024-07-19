@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="../Images/logo.jpg">
+    <title>HEAVEN TOUCH (Register)</title>
+    <link rel="stylesheet" href="../CSS/style_landing.css">
+    <link rel="stylesheet" href="../CSS/register.css">
+    
+</head>
+<body>
+    <nav class="mainNav">
+        <div class="mainNav__logo">
+            <img src="../Images/logo.jpg" alt="logo">
+            <h3 class="heading">HEAVEN TOUCH</h3>
+        </div>
+        <div class="mainNav__links">
+            <a href="../index.html" class="mainNav__link">Home</a>
+            <a href="../HTML/about.html" class="mainNav__link">About Us</a>
+            <a href="../HTML/Login.html" class="mainNav__link">LOGIN</a>
+            <a href="../HTML/Register.html" class="mainNav__link">Register</a>
+            <a href="../HTML/contact.html" class="mainNav__link">Contacts Us</a>
+        </div>
+        <div class="mainNav__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <g data-name="Layer 2" fill="#9197AE">
+                    <g data-name="menu-2">
+                        <rect width="24" height="24" transform="rotate(180 12 12)" opacity="0" />
+                        <circle cx="4" cy="12" r="1" />
+                        <rect x="7" y="11" width="14" height="2" rx=".94" ry=".94" />
+                        <rect x="3" y="16" width="18" height="2" rx=".94" ry=".94" />
+                        <rect x="3" y="6" width="18" height="2" rx=".94" ry=".94" />
+                    </g>
+                </g>
+            </svg>
+        </div>
+    </nav>
+    <form name="registerForm" onsubmit="return validateForm()" action="/register" method="POST" enctype="multipart/form-data">
+        <h1>REGISTER</h1>
+        <label>Username</label>
+        <input type="text" name="username">
+        <label>First name</label>
+        <input type="text" name="firstname">
+        <label>Last name</label>
+        <input type="text" name="lastname">
+        <label>Date of Birth</label>
+        <input type="date" name="dob">
+        <label>Password</label>
+        <input type="password" name="password">
+        <label>E-Mail</label>
+        <input type="email" name="email">
+        <label>Mobile</label>
+        <input type="number" name="mobile">
+        <label>Upload Image</label>
+        <input type="file" name="image">
+        <div class="button">
+            <button type="submit" class="btn">Sign Up</button>
+        </div>
+        <p>Already User?<a href="../HTML/Login.html">Login</a></p>
+        <div class="button">
+            <a onclick="history.back()"><input type="button1" value="back" class="btn"/></a>
+        </div>
+    </form>
+    <script src="../Javascript/validation.js" defer></script>
+    <script src="../Javascript/register.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Status</title>
+    <link rel="stylesheet" href="/CSS/payment_status.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Payment Status</h1>
+        <div id="paymentDetails">
+            <p><strong>Payment ID:</strong> <span id="paymentId"></span></p>
+            <p><strong>Order ID:</strong> <span id="orderId"></span></p>
+            <p><strong>Amount:</strong> ₹<span id="amount"></span></p>
+            <p><strong>Currency:</strong> <span id="currency"></span></p>
+            <p><strong>Status:</strong> <span id="status"></span></p>
+            <p><strong>Concert Name:</strong> <span id="concertName"></span></p>
+        </div>
+        <button id="downloadImage">Download as Image</button>
+        <button id="downloadPDF">Download as PDF</button>
+        <button id="profile">Go to Profile</button>
+    </div>
+    <script src="/Javascript/payment_status.js"></script>
+</body>
+</html>

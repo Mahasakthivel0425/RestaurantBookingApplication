@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.9">
+    <title>Profile</title>
+    <link rel="icon" href="../Images/logo.jpg">
+    <link rel="stylesheet" href="../CSS/style_profile.css"> <!-- Add a separate CSS file for profile styles -->
+    <script src="../Javascript/profile.js" defer></script>
+</head>
+<body>
+    <nav class="mainNav">
+        <div class="mainNav__logo">
+            <img src="../Images/logo.jpg" alt="logo">
+            <h3 class="heading">HEAVEN TOUCH</h3>
+        </div>
+        <div class="mainNav__links">
+            <a href="../html/index.html" class="mainNav__link">Home</a>
+            <a href="../HTML/about.html" class="mainNav__link">About Us</a>
+            <a href="../HTML/contact.html" class="mainNav__link">Contacts Us</a>
+            <a id="bookTicketsLinkarrahman" class="mainNav__link mainNav__button1">Book Tickets A.R</a>
+            <a id="bookTicketsLinkvijay" class="mainNav__link mainNav__button2">Book Tickets Vijay</a>
+            <a id="bookTicketsLinkprabhu" class="mainNav__link mainNav__button3">Book Tickets Prabhu</a>
+            <a id="bookTicketsLinksima" class="mainNav__link mainNav__button5">Book Ticket - SIIMA</a>
+            <a id="bookTicketsLinkRockTheNight" class="mainNav__link mainNav__button6">Book Ticket - Rock the Night</a>
+            <a id="bookTicketsLinkPopFiesta" class="mainNav__link mainNav__button7">Book Ticket - Pop Fiesta</a>
+            <a id="bookTicketsLinkJazzUnderTheStars" class="mainNav__link mainNav__button8">Book Ticket - Jazz Under the Stars</a>
+            <!-- Add the Payment and Booking History link -->
+            <a id="paymentHistoryBtn" href="../HTML/history.html" class="mainNav__link mainNav__button4">Payment and Booking History</a>
+        </div>
+        <!-- Profile picture container on the right side of the nav bar -->
+        <div class="mainNav__profile">
+            <img id="profileImage" src="" alt="Profile Picture" />
+            <h3 id="username" class="profile-name"></h3>
+            <span id="userId" style="display: none;"></span> <!-- Add hidden element to store user ID -->
+        </div>
+    </nav>
+
+    <div id="profile">
+        <!-- Profile content here -->
+        <h1 id="welcomeMessage"></h1>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 HEAVEN TOUCH. All rights reserved.</p>
+    </footer>
+
+   </body>
+</html>

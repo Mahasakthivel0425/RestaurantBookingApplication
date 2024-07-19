@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking Cart - Prabhu deva</title>
+    <link rel="icon" href="/Images/Prabhudeva.jpg">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; font-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' https://cdn.jsdelivr.net 'unsafe-inline'; script-src 'self' https://checkout.razorpay.com; frame-src https://api.razorpay.com;">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/prabhudeva.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+<div class="container" data-concert-details="{ &quot;concertName&quot;: &quot;Dancing Legend Prabhu Deva's Concert&quot;, &quot;location&quot;: &quot;Chennai&quot;, &quot;address&quot;: &quot;Sharjah Cricket Stadium,Chennai&quot;, &quot;city&quot;: &quot;Chennai&quot;, &quot;date&quot;: &quot;Friday, 20th April 2018&quot;, &quot;time&quot;: &quot;IST 7 PM&quot; }">
+    <!-- Image Container -->
+    <div class="image-container">
+        <img src="/Images/Prabhudeva.jpg" alt="Image 1">
+    </div>
+
+    <!-- Content -->
+    <div class="content"> 
+        <div class="event-details">
+            <div class="event-info">
+                <h2 class="event-title">Dancing Legend Prabhu Deva's Concert</h2>
+                <p class="event-description">Get ready for an amazing live concert in Chennai featuring the king of Dance Prabhu Deva, brought to you by Mathrubhumi. Join us at www.platinumlist.net for a memorable night of fantastic music and rhythms.</p>
+                <div class="event-time">
+                    <h3>Time</h3>
+                    <p>Friday, 20th April 2018, IST 7 PM</p>
+                </div>
+                <div class="event-venue">
+                    <h3>Venue</h3>
+                    <p>Sharjah Cricket Stadium,Chennai</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Event -->
+        <div class="about-event">
+            <h2>About this Event</h2>
+            <p>Prepare to be excited by the dancing King PrabhuDeva as he takes center stage for an unforgettable evening of dancing and magic. With a career spanning decades, Prabhu deva has performed new dancing skills that have captured the hearts of millions worldwide.</p>
+        </div>
+
+        <!-- Ticket Booking -->
+        <div class="ticket-booking">
+            <div class="ticket-details">
+                <h2>Dancing Legend Prabhu Deva's Concert</h2>
+                <div class="quantity-controls">
+                    <button id="subtractTicket">-</button>
+                    <span id="ticketCount">0</span>
+                    <button id="addTicket">+</button>
+                </div>
+                <div class="total-price">
+                    Total: <span id="ticketTotalAmount">₹0</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Grab Your Tickets</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Dancing Legend Prabhu Deva's Concert</h6>
+                    <p class="card-text">Location:Sharjah Stadium,Chennai</p>
+                    <p class="card-text">Friday, 20 April 2018</p>
+                    <hr>
+                    <div id="charges">
+                        <p class="card-text">Total amount:</p>
+                        <p id="charges1" class="card-text">₹0</p>
+                    </div>
+                    <div class="card-sub-btn" id="payBtn">Book Now</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/Javascript/ticketbooking.js"></script>
+</body>
+</html>
